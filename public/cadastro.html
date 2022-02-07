@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script type="module" src="./JS/cadastro.js"></script>
+  </head>
+  <body>
+    <div class="painel"></div>
+    <div class="login">
+      <div class="cadastro-content mb-5">
+        <header>
+          <h5 class="text-uppercase">Criar conta</h5>
+        </header>
+        <section class="mb-3">
+          <div class="form-floating w-100">
+            <input
+              type="text"
+              class="form-control"
+              id="cadastroUsername"
+              placeholder="Username"
+            />
+            <label for="floatingInput" id="cadastroNome">Username</label>
+          </div>
+
+          <div class="form-floating w-100">
+            <input
+              type="password"
+              class="form-control"
+              id="cadastroSenha"
+              placeholder="Password"
+            />
+            <label for="floatingPassword" id="cadastroSenha">Password</label>
+          </div>
+
+          <div class="form-floating w-100">
+            <input
+              type="password"
+              class="form-control"
+              id="repeatSenha"
+              placeholder="Repeat Password"
+            />
+            <label for="floatingPassword" id="repeatSenha"
+              >Repeat Password</label
+            >
+          </div>
+        </section>
+        <footer>
+          <button
+            type="button"
+            class="btn btn-success mb-3 text-uppercase p-2 w-100"
+            id="btn-CriarConta"
+          >
+            Criar conta agora</button
+          ><br />
+        </footer>
+      </div>
+    </div>
+  
+  </body>
+</html>
